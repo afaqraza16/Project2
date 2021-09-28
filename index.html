@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+     <ol >
+        <li>
+            <a href="#item1div" onclick="div1()">item1</a>
+        </li> 
+       <li>
+        <a href="#item2div" onclick="div2()">item2</a>
+       </li>
+   <li>
+    <a href="#item3div" onclick="div3()">item3</a>
+   </li>
+  <li>
+    <a href="#item4div" onclick="div4()">item4</a>
+  </li>
+  
+
+     </ol>
+
+     <div style="background-color: yellow; height: 1000px;"></div>
+     <div id="item1div">
+        <label >Name</label>
+        <input type="text" id="name"><br>
+
+        <label >Email</label>
+        <input type="text" id="email"><br>
+
+        <label >Age</label>
+        <input type="text" id="age"><br>
+    </div>
+    <div id="item2div">
+        <label >DOB</label>
+        <input type="text " id="dob"><br>
+
+        <label >Number</label>
+        <input type="text" id ="number"><br>
+    </div>
+    
+    <div id="item3div">
+   
+      <label >Male</label>
+      <input type="checkbox"  id="ch">
+   
+      <label >Female</label>
+      <input type="checkbox">
+    </div>
+   <div id="item4div">
+<select  id="st">
+    <option value="value1">value1</option>
+    <option value="value2">value2</option>
+</select>
+   </div>
+    
+
+
+<script>
+    function div1(){
+        document.getElementById('name').value="afaq";
+        document.getElementById('email').value="afaqraza0220@gmail.com";
+        document.getElementById('age').value="21 year";
+    }
+    function div2(){
+        document.getElementById('dob').value="2001";
+        document.getElementById('number').value="03139504221";
+    }
+ function div3(){
+     document.getElementById('ch').checked="false";
+ }
+
+ function div4(){
+     document.getElementById('st').value="value2";
+ }
+
+    
+</script>
+</body>
+</html>
